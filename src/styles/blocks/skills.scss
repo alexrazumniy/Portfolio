@@ -1,0 +1,24 @@
+.skills {
+  background-color: #cbe9d6;
+  border-radius: 20px;
+
+  &_header {
+    margin: 15px auto;
+  }
+
+  &_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 20px;
+    margin: 10px;
+    transition: 0.2s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+  }
+}
