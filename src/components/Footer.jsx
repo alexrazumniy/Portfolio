@@ -6,11 +6,6 @@ const Footer = () => {
           <ul className="social">
             <li className="social__item">
               <a href="#!">
-                <img src="./img/icons/vk.svg" alt="Link" />
-              </a>
-            </li>
-            <li className="social__item">
-              <a href="#!">
                 <img src="./img/icons/instagram.svg" alt="Link" />
               </a>
             </li>
