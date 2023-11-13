@@ -1,3 +1,10 @@
+import linkedin from "../assets/icons/linkedin_blue.svg";
+import github from "../assets/icons/gitHub.svg";
+import telegram from "../assets/icons/telegram.svg";
+import email from "../assets/icons/email.svg";
+import phone from "../assets/icons/phone.svg";
+import location from "../assets/icons/location.svg";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -6,22 +13,22 @@ const Footer = () => {
           <ul className="social">
             <li className="social__item">
               <a href="#!">
-                <img src="./img/icons/instagram.svg" alt="Link" />
+                <img src={linkedin} alt="Link" />
               </a>
             </li>
             <li className="social__item">
               <a href="#!">
-                <img src="./img/icons/twitter.svg" alt="Link" />
+                <img src={github} alt="Link" />
               </a>
             </li>
             <li className="social__item">
               <a href="#!">
-                <img src="./img/icons/gitHub.svg" alt="Link" />
+                <img src={telegram} alt="Link" />
               </a>
             </li>
             <li className="social__item">
               <a href="#!">
-                <img src="./img/icons/linkedIn.svg" alt="Link" />
+                <img src={email} alt="Link" />
               </a>
             </li>
           </ul>
