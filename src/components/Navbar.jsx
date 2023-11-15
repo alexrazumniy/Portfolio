@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="nav">
-        <div className="container">
+        {/* <div className="container"> */}
           <div className="nav-row">
             <NavLink to="/" className="logo">
               <strong>Freelancer</strong> portfolio
@@ -50,7 +50,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </div>
+        {/* </div> */}
       </nav>
     </div>
   );
