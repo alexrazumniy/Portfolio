@@ -1,11 +1,11 @@
-import user_photo from "../assets/my_photo.jpg";
+import MyPhotoWithAnimation from "../components/utils/photoWithAnimation.jsx";
 
 const Header = () => {
   return (
     <div>
       <header className="header">
-      {/* <img className="user_photo" src={user_photo} alt="user_photo" /> */}
         <div className="header__wrapper">
+          <MyPhotoWithAnimation />
           <h1 className="header__title">
             <strong>
               Hi, my name is <em>Alex</em>
@@ -22,9 +22,7 @@ const Header = () => {
             that you want to visit again and again. I am a team player open to
             change and will strive to bring success to the company by developing
             optimal algorithms and approaches that will solve problems that arise
-            in Frontend development. <br />
-            I read technical literature in English, watch
-            shows and listen to podcasts.</p>
+            in Frontend development</p>
           <a href="#!" className="btn">
             Download CV
           </a>

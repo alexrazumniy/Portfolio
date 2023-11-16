@@ -1,0 +1,19 @@
+.image_container {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 0;
+  overflow: hidden;
+  transition: width 1.5s ease;
+  /* Длительность и тип анимации */
+}
+
+.animate {
+  width: 200px;
+  /* Целевая ширина изображения */
+}
+
+.image_container img {
+  width: 100%;
+  height: auto;
+}

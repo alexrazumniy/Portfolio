@@ -6,6 +6,7 @@ import sass from "../assets/skills-icons/sass.svg";
 import node from "../assets/skills-icons/node.svg";
 import react from "../assets/skills-icons/react.svg";
 import redux from "../assets/skills-icons/redux.svg";
+import vite from "../assets/skills-icons/vite.svg";
 import bootstrap from "../assets/skills-icons/bootstrap.svg";
 import gulp from "../assets/skills-icons/gulp.svg";
 import webpack from "../assets/skills-icons/webpack.svg";
@@ -28,6 +29,7 @@ const Skills = () => {
           <img className="skills__item" src={node} />
           <img className="skills__item" src={react} />
           <img className="skills__item" src={redux} />
+          <img className="skills__item" src={vite} />
           <img className="skills__item" src={bootstrap} />
           <img className="skills__item" src={gulp} />
           <img className="skills__item" src={webpack} />
