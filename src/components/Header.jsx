@@ -23,7 +23,7 @@ const Header = () => {
             change and will strive to bring success to the company by developing
             optimal algorithms and approaches that will solve problems that arise
             in Frontend development</p>
-          <a href="#!" className="btn">
+          <a href="/src/components/pages/CV_Rozumniy_Oleksii_Frontend.pdf" download="CV_Rozumniy_Oleksii_Frontend.pdf" className="btn">
             Download CV
           </a>
         </div>
