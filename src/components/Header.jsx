@@ -10,13 +10,13 @@ const Header = () => {
             <strong>
               Hi, my name is <em>Alex</em>
             </strong>
-            <br />a frontend developer
+            <br />I`m a frontend developer
           </h1>
           <div className="header__text">
             <p>with passion for learning and creating.</p>
           </div>
           {/* optionally!!! */}
-          <p>I am a beginner frontend developer. My goal as a developer is to apply
+          <p>I am a beginner frontend developer. My goal is to apply
             my technical skills to web development, creating interesting
             applications, cool user interfaces, and vivid, memorable web pages
             that you want to visit again and again. I am a team player open to

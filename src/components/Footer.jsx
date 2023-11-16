@@ -2,8 +2,6 @@ import linkedin from "../assets/icons/linkedin_blue.svg";
 import github from "../assets/icons/gitHub.svg";
 import telegram from "../assets/icons/telegram.svg";
 import email from "../assets/icons/email.svg";
-import phone from "../assets/icons/phone.svg";
-import location from "../assets/icons/location.svg";
 
 const Footer = () => {
   return (
@@ -17,24 +15,21 @@ const Footer = () => {
               </a>
             </li>
             <li className="social__item">
-              <a href="#!">
+              <a href="https://github.com/alexrazumniy" target="_blank" rel="noreferrer">
                 <img src={github} alt="Link" />
               </a>
             </li>
             <li className="social__item">
-              <a href="#!">
+              <a href="https://t.me/alexx_www" target="_blank" rel="noreferrer">
                 <img src={telegram} alt="Link" />
               </a>
             </li>
             <li className="social__item">
-              <a href="#!">
+              <a href="mailto:ncecoexp@gmail.com" target="_blank" rel="noreferrer">
                 <img src={email} alt="Link" />
               </a>
             </li>
           </ul>
-          {/* <div className="copyright">
-            <p>© 2023</p>
-          </div> */}
         </div>
       </div>
     </footer>
