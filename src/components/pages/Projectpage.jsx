@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import BtnGitHub from "../BtnGitHub";
+// import BtnGitHub from "../BtnGitHub";
 import { projectslist } from "../../helpers/projectsList";
 
 const Projectpage = () => {
@@ -24,7 +24,11 @@ const Projectpage = () => {
             <p>{project.skills}</p>
           </div>
 
-          {project.gitHubLink && <BtnGitHub link={project.gitHubLink} />}
+          <a href={project.link} target="_blank" rel="noreferrer" className="btn-outline">
+            See it !
+          </a>
+
+          {/* {project.link && <BtnGitHub link={project.link} />} */}
         </div>
       </div>
     </main>

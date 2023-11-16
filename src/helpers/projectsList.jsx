@@ -11,41 +11,41 @@ const projectslist = [
     title: "Landing Page",
     skills: "HTML, CSS",
     img: img01,
-    gitHubLink: "https://alexrazumniy.github.io/project-foundation/",
+    link: "https://alexrazumniy.github.io/project-foundation/",
   },
   {
     id: 2,
     title: "Landing Page",
     skills: "HTML, CSS, jQuery",
     img: img02,
-    gitHubLink: "https://alexrazumniy.github.io/project-landguru/",
+    link: "https://alexrazumniy.github.io/project-landguru/",
   },
   {
     id: 3,
     title: "Web Application",
     skills: "React, Node.js",
     img: img03,
-    gitHubLink: "https://alexrazumniy.github.io/MakeITtastier/",
+    link: "https://alexrazumniy.github.io/MakeITtastier/",
   },
   {
     id: 4,
     title: "Web Application",
     skills: "HTML, CSS, Javascript",
     img: img04,
-    gitHubLink: "https://alexrazumniy.github.io/Task-Manager/",
+    link: "https://alexrazumniy.github.io/Task-Manager/",
   },
-  {
-    id: 5,
-    title: "Apple service",
-    skills: "React, Node.js, MongoDB",
-    img: img05,
-  },
-  {
-    id: 6,
-    title: "Android service",
-    skills: "React, Node.js, MongoDB",
-    img: img06,
-  },
+  // {
+  //   id: 5,
+  //   title: "Apple service",
+  //   skills: "React, Node.js, MongoDB",
+  //   img: img05,
+  // },
+  // {
+  //   id: 6,
+  //   title: "Android service",
+  //   skills: "React, Node.js, MongoDB",
+  //   img: img06,
+  // },
 ];
 
 export { projectslist };
