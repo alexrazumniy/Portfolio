@@ -6,7 +6,6 @@ import Projects from "./components/pages/Projects";
 import Projectpage from "./components/pages/Projectpage";
 import Contacts from "./components/pages/Contacts";
 import Footer from "./components/Footer";
-
 import ScrollToTop from "./components/utils/scrollToTop";
 
 const App = () => {

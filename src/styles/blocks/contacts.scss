@@ -1,0 +1,39 @@
+.contact_info {
+    margin-bottom: 40px;
+
+    &__item {
+        margin-bottom: 25px;
+
+        &-theme-1 {
+            color: var(--theme-1);
+        }
+    
+        &-theme-2 {
+            color: var(--theme-2);
+        }
+    
+        &-theme-3 {
+            color: var(--theme-3);
+        }
+    
+        &-theme-4 {
+            color: var(--theme-4);
+        }
+    
+        &-theme-5 {
+            color: var(--theme-5);
+        }
+    }
+
+    &__city {
+        font-size: 20px;
+    }
+
+    &__messengers {
+        font-size: 20px;
+    }
+
+    &__email {
+        font-size: 20px;
+    }
+}

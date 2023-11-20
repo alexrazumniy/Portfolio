@@ -34,18 +34,6 @@ const projectslist = [
     img: img04,
     link: "https://alexrazumniy.github.io/Task-Manager/",
   },
-  // {
-  //   id: 5,
-  //   title: "Apple service",
-  //   skills: "React, Node.js, MongoDB",
-  //   img: img05,
-  // },
-  // {
-  //   id: 6,
-  //   title: "Android service",
-  //   skills: "React, Node.js, MongoDB",
-  //   img: img06,
-  // },
 ];
 
 export { projectslist };

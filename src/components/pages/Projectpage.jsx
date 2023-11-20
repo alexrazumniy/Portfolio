@@ -24,7 +24,7 @@ const Projectpage = () => {
             <p>{project.skills}</p>
           </div>
 
-          <a href={project.link} target="_blank" rel="noreferrer" className="btn-outline">
+          <a className="btn-outline" href={project.link} target="_blank" rel="noreferrer">
             See it !
           </a>
 
