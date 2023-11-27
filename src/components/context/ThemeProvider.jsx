@@ -1,4 +1,4 @@
-import { useState, createContext } from 'react';
+import { useState, createContext, useMemo } from 'react';
 
 export const ThemeContext = createContext();
 
@@ -9,7 +9,10 @@ export const ThemeProvider = (props) => {
   const changeTheme = (theme) => {
     setCurrentTheme(theme);
     // добавить логику сохранения текущей темы (в localStorage)
+
   };
+
+  useMemo(() => ({ currentTheme, setCurrentTheme }), [currentTheme]);
 
   return (
     <ThemeContext.Provider value={{ currentTheme, themes, changeTheme }}>

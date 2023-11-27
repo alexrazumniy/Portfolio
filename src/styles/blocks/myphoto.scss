@@ -4,8 +4,8 @@
   left: 25px;
   width: 0;
   overflow: hidden;
+  border-radius: 50%;
   transition: width 1.5s ease;
-  /* Длительность и тип анимации */
 }
 
 .animate {
@@ -13,7 +13,7 @@
   /* Целевая ширина изображения */
 }
 
-.image_container img {
-  width: 100%;
-  height: auto;
-}
+// .image_container img {
+//   width: 100%;
+//   height: auto;
+// }

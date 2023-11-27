@@ -1,51 +1,78 @@
-.btn {
-	display: inline-block;
-	height: 48px;
-	padding: 15px 28px;
-
-	border-radius: 5px;
-	background-color: var(--accent);
-	color: var(--white);
-	letter-spacing: 0.15px;
-	font-size: 16px;
-	font-weight: 500;
-
-	transition: opacity 0.2s ease-in;
+.button {  
+  background-image: linear-gradient(90deg, #84e9f5, #38bc65);
+  border-radius: 79px;
+  border: 1px solid #4a5032;
+  box-shadow: #6E7849 0px 0px 19px;
+  color: #ffffff;
+  font-size: 2em;
+  margin: auto;
+  padding: 15px;
+  text-decoration: none;
+  text-shadow: #000000 9px 5px 7px;
+  transition: opacity 0.6s linear;
 }
 
-.btn:hover {
-	opacity: 0.8;
+.button:hover {
+  padding: 15px;
+  opacity: 0.5;
+  transition: all 0.2s linear;
+  transform: translate(1px, 1px);
 }
 
-.btn:active {
-	position: relative;
-	top: 1px;
-}
 
-/* Btn outline */
+  
 
-.btn-outline {
-	display: flex;
-	column-gap: 10px;
-	justify-content: space-between;
-	align-items: center;
 
-	// height: 48px;
-	padding: 10px 50px;
+// ****** Previous code
 
-	border-radius: 5px;
-	border: 1px solid #000;
-	background-color: #fff;
-	color: #000;
+// .btn {
+// 	display: inline-block;
+// 	height: 48px;
+// 	padding: 15px 28px;
 
-	transition: opacity 0.2s ease-in;
-}
+// 	border-radius: 5px;
+// 	background-color: var(--accent);
+// 	color: var(--white);
+// 	letter-spacing: 0.15px;
+// 	font-size: 16px;
+// 	font-weight: 500;
 
-.btn-outline:hover {
-	opacity: 0.8;
-}
+// 	transition: opacity 0.2s ease-in;
+// }
 
-.btn-outline:active {
-	position: relative;
-	top: 1px;
-}
+// .btn:hover {
+// 	opacity: 0.8;
+// }
+
+// .btn:active {
+// 	position: relative;
+// 	top: 1px;
+// }
+
+// /* Btn outline */
+
+// .btn-outline {
+// 	display: flex;
+// 	column-gap: 10px;
+// 	justify-content: space-between;
+// 	align-items: center;
+
+// 	// height: 48px;
+// 	padding: 10px 50px;
+
+// 	border-radius: 5px;
+// 	border: 1px solid #000;
+// 	background-color: #fff;
+// 	color: #000;
+
+// 	transition: opacity 0.2s ease-in;
+// }
+
+// .btn-outline:hover {
+// 	opacity: 0.8;
+// }
+
+// .btn-outline:active {
+// 	position: relative;
+// 	top: 1px;
+// }

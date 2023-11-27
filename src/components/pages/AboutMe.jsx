@@ -6,9 +6,17 @@ const Contacts = () => {
 
   return (
     <main className="section">
-      <div className="container">
-        <h1 className="title-1">Contacts</h1>
-
+      <div className="contacts_container">
+        <h1 className="title-1">About Me</h1>
+        <h5 className="about_me">I am interested in UI/UX design and front-end development.
+          My goal as a developer is to apply my technical
+          skills to web development, creating interesting web applications,
+          cool user interfaces, and vivid, memorable web pages
+          that you want to visit again and again.
+          I am a team player open to change and will strive to bring
+          success to the company by developing optimal algorithms
+          and approaches that will solve problems in front-end development.
+          Glad to be part of a team in an interesting project</h5>
         <ul className="contact_info">
           {/* <li className="contact_info__item"> */}
           <li className={`contact_info__item contact_info__item-${currentTheme}`}>
@@ -30,6 +38,8 @@ const Contacts = () => {
             </p>
           </li>
         </ul>
+        <h1>Additional info</h1>
+        <p>certificate</p>
       </div>
     </main>
   );

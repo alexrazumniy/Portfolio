@@ -12,8 +12,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="nav">
-        {/* <div className="container"> */}
-        <ToggleTheme/>
+        <ToggleTheme />
         <div className="nav-row">
           <NavLink to="/" className="logo">
             <strong className={`logo-${currentTheme}`}>My portfolio</strong>
@@ -22,7 +21,6 @@ const Navbar = () => {
           <BtnDarkMode />
 
           <ul className="nav-list">
-            {/* <li className="nav-list__link"> */}
             <li className={`nav-list__link nav-list__link-${currentTheme}`}>
               <NavLink
                 to="/"
@@ -34,7 +32,6 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            {/* <li className="nav-list__link"> */}
             <li className={`nav-list__link nav-list__link-${currentTheme}`}>
               <NavLink
                 to="/projects"
@@ -45,20 +42,18 @@ const Navbar = () => {
                 Projects
               </NavLink>
             </li>
-            {/* <li className="nav-list__link"> */}
             <li className={`nav-list__link nav-list__link-${currentTheme}`}>
               <NavLink
-                to="/contacts"
+                to="/about_me"
                 className={({ isActive }) =>
                   isActive ? activeLink : normalLink
                 }
               >
-                Contacts
+                About me
               </NavLink>
             </li>
           </ul>
         </div>
-        {/* </div> */}
       </nav>
     </div>
   );
