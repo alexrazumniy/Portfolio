@@ -1,5 +1,5 @@
 .skills {
-  background-image: linear-gradient(90deg, rgb(37, 125, 134), #29d663);
+  text-align: center;
 
   &-theme-1 {
     color: var(--theme-1);
@@ -21,15 +21,7 @@
     color: var(--theme-5);
   }
 
-  // &_info {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
   &__item {
-    display: inline-block;
     max-width: 50px;
     margin: 10px;
     transition: all 0.3s linear;

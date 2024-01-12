@@ -9,7 +9,6 @@ export const ThemeProvider = (props) => {
   const changeTheme = (theme) => {
     setCurrentTheme(theme);
     // добавить логику сохранения текущей темы (в localStorage)
-
   };
 
   useMemo(() => ({ currentTheme, setCurrentTheme }), [currentTheme]);

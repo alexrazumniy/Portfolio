@@ -6,7 +6,6 @@ import email from "../assets/icons/email.svg";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
         <div className="footer__wrapper">
           <ul className="social">
             <li className="social__item">
@@ -31,7 +30,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
     </footer>
   );
 };

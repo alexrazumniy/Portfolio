@@ -5,14 +5,12 @@ const Projects = () => {
 
   return (
     <main className="section">
-      <div className="container">
-        <p className="title-1">Projects</p>
-        <ul className="projects">
-          {projectslist.map((project, id) => {
-            return <Project key={id} title={project.title} img={project.img} id={id} />;
-          })}
-        </ul>
-      </div>
+      <p className="title-1">Projects</p>
+      <ul className="projects">
+        {projectslist.map((project, id) => {
+          return <Project key={id} title={project.title} img={project.img} id={id} />;
+        })}
+      </ul>
     </main>
   );
 };

@@ -1,30 +1,93 @@
-.contacts_container {
-	padding: 40px 0;
-	min-height: 480px;
+.about_me {
+    justify-content: space-around;
+
+    &_text {
+        margin: 0 auto 30px;
+        font-size: 18px;
+        line-height: 1.3;
+        text-align: left;
+        max-width: 680px;
+    }
 }
 
-.contact_info {
-    margin-bottom: 40px;
+.profile {
+    min-width: 500px;
+    text-align-last: left;
+    background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+    border-radius: 14px;
+    border: 5px solid transparent;
+    animation: background 2s infinite alternate;
+}
 
+@keyframes background {
+    100% {
+        background-position: 0 200px;
+    }
+}
+
+.personal_info {
+    border-radius: 10px;
+    max-width: 500px;
+    padding: 15px;
+    background: rgb(109, 128, 212);
+    box-shadow: 13px 10px 23px -5px rgba(0,0,0,0.75);
+}
+
+.personal_info__item {
+    align-items: center;
+    font-weight: bold;
+}
+
+.contact_item_sign {
+    margin-bottom: 8px;
+
+    &:last-of-type {
+        margin-right: 6px;
+    }
+
+    &:not(:first-child) {
+        margin-left: -18px;
+    }
+}
+
+.hard_skills,
+.soft_skills {
+    min-width: 250px;
+    min-height: 300px;
+    background: #1dccb5;
+    border: 1px solid rgb(209, 15, 145);
+    box-shadow: 13px 10px 23px -5px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px;
+}
+
+.hard_skills__item,
+.soft_skills__item {
+    margin-bottom: 5px;
+}
+
+
+.contact_info {
     &__item {
         margin-bottom: 25px;
 
         &-theme-1 {
             color: var(--theme-1);
         }
-    
+
         &-theme-2 {
             color: var(--theme-2);
         }
-    
+
         &-theme-3 {
             color: var(--theme-3);
         }
-    
+
         &-theme-4 {
             color: var(--theme-4);
         }
-    
+
         &-theme-5 {
             color: var(--theme-5);
         }
