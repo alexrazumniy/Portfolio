@@ -7,7 +7,7 @@ import viber from "../../assets/icons/viber.svg";
 import whatsapp from "../../assets/icons/whatsapp.svg";
 import email from "../../assets/icons/email.svg";
 import student_cap from "../../assets/icons/student_cap.svg";
-import portfolio from "../../assets/icons/portfolio.svg";
+// import portfolio from "../../assets/icons/portfolio.svg";
 
 const AboutMe = () => {
   const { currentTheme } = useContext(ThemeContext);
