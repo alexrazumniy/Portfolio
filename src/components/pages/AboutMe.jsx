@@ -46,10 +46,10 @@ const AboutMe = () => {
                 <img className="contact_item_sign"src={email} alt="email" />
                 <h3>ncecoexp@gmail.com</h3>
               </li>
-              <li className="personal_info__item flex">
+              {/* <li className="personal_info__item flex">
                 <img className="contact_item_sign" src={portfolio} alt="portfolio" />
                 <h2>Experience</h2>
-              </li>
+              </li> */}
               <li className="personal_info__item flex">
                 <img className="contact_item_sign" src={student_cap} alt="student_cap" />
                 <h2>Education</h2>
