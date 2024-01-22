@@ -12,15 +12,19 @@ const Navbar = () => {
   return (
     <div>
       <nav className="nav">
-        <button onClick={() => changeLanguage("en")}>EN</button>
-        <button onClick={() => changeLanguage("ru")}>RU</button>
         <ToggleTheme />
         <div className="nav-row">
           <NavLink to="/" className="logo">
             <strong className={`logo-${currentTheme}`}>{t("My portfolio")}</strong>
           </NavLink>
+            
+            <ul className="lang_selector">
+              <button className="lang_en_button" onClick={() => changeLanguage("en")}>EN</button>
+              <button className="lang_ru_button" onClick={() => changeLanguage("ru")}>RU</button>
+            </ul>
 
           <BtnDarkMode />
+
 
           <ul className="nav-list">
             <li className={`nav-list__link nav-list__link-${currentTheme}`}>

@@ -101,6 +101,34 @@
 	font-weight: 700;
 }
 
+// Language buttons
+
+.lang_selector {
+	margin-right: 40px;
+}
+
+.lang_en_button {
+	background-color: #6b69dd;
+	border: 1px solid #d4218a;
+	border-radius: 4px;
+	padding: 5px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.lang_ru_button {
+	background-color: #4be037;
+	border: 1px solid #be1fcc;
+	border-radius: 4px;
+	padding: 5px;
+	margin-left: 10px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 /* Links */
 
 a,

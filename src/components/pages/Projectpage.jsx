@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeProvider";
 import { useParams } from "react-router-dom";
 // import BtnGitHub from "../BtnGitHub";
 import { projectslist } from "../../helpers/projectsList";
 
 const Projectpage = () => {
+  const { t } = useContext(ThemeContext);
   const { id } = useParams();
   const project = projectslist[id];
 
@@ -22,10 +25,12 @@ const Projectpage = () => {
         <div className="project-details__desc">
           <p>{project.skills}</p>
         </div>
-
-        <a className="btn-outline" href={project.link} target="_blank" rel="noreferrer">
-          See it !
-        </a>
+        {/* ADD CLASS!!! */}
+        <button>
+          <a className="btn-outline" href={project.link} target="_blank" rel="noreferrer">
+            {t("See it")}
+          </a>
+        </button>
 
         {/* {project.link && <BtnGitHub link={project.link} />} */}
       </div>

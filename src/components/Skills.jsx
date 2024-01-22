@@ -19,12 +19,12 @@ import photoshop from "../assets/skills-icons/photoshop.svg";
 import premiere from "../assets/skills-icons/premiere.svg";
 
 const Skills = () => {
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme, t } = useContext(ThemeContext)
 
   return (
     <div>
       <div className="skills">
-        <h2 className={`title-2 skills-${currentTheme}`}>Frontend</h2>
+        <h2 className={`title-2 skills-${currentTheme}`}>{t("Frontend")}</h2>
         <img className="skills__item" src={html} />
         <img className="skills__item" src={css} />
         <img className="skills__item" src={js} />
@@ -39,7 +39,7 @@ const Skills = () => {
         {/* <img className="skills__item" src={webpack} /> */}
       </div>
       <div className="skills">
-        <h2 className={`title-2 skills-${currentTheme}`}>Design</h2>
+        <h2 className={`title-2 skills-${currentTheme}`}>{t("Design")}</h2>
         <img className="skills__item" src={figma} />
         <img className="skills__item" src={coreldraw} />
         <img className="skills__item" src={photoshop} />

@@ -4,7 +4,7 @@ import MyPhotoWithAnimation from "./MyPhoto.jsx";
 import Button from "./Button.jsx";
 
 const Header = () => {
-  const { currentTheme, t } = useContext(ThemeContext)
+  const { currentTheme, t } = useContext(ThemeContext);
 
   return (
     <div>
