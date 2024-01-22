@@ -1,4 +1,5 @@
 import { useState, createContext, useMemo } from 'react';
+import { useTranslation } from "react-i18next";
 
 export const ThemeContext = createContext();
 
@@ -11,10 +12,16 @@ export const ThemeProvider = (props) => {
     // добавить логику сохранения текущей темы (в localStorage)
   };
 
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language)
+  }
+
   useMemo(() => ({ currentTheme, setCurrentTheme }), [currentTheme]);
 
   return (
-    <ThemeContext.Provider value={{ currentTheme, themes, changeTheme }}>
+    <ThemeContext.Provider value={{ currentTheme, themes, changeTheme, t, changeLanguage }}>
       {props.children}
     </ThemeContext.Provider>
   );

@@ -4,7 +4,7 @@ import MyPhotoWithAnimation from "./MyPhoto.jsx";
 import Button from "./Button.jsx";
 
 const Header = () => {
-  const { currentTheme } = useContext(ThemeContext)
+  const { currentTheme, t } = useContext(ThemeContext)
 
   return (
     <div>
@@ -13,20 +13,14 @@ const Header = () => {
           <MyPhotoWithAnimation />
           <h1 className="header__title">
             <strong>
-              <em>Alex Rozumniy</em>
+              <em>{t("Alex Rozumniy")}</em>
             </strong>
-            <br />Frontend developer
+            <br />{t("Frontend developer")}
           </h1>
           <div className="header__text">
-            <p>with passion for learning and creating</p>
+            <p>{t("with passion for learning and creating")}</p>
           </div>
-          <p className="header__text__about">I am a beginner frontend developer. My goal is to apply
-            my technical skills to web development, creating interesting
-            applications, cool user interfaces, and vivid, memorable web pages
-            that you want to visit again and again. I am a team player open to
-            change and will strive to bring success to the company by developing
-            optimal algorithms and approaches that will solve problems that arise
-            in Frontend development</p>          
+          <p className="header__text__about">{t("I am a beginner frontend developer")}</p>          
           <Button />
         </div>
       </header>
