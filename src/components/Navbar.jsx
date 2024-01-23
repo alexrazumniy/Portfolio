@@ -3,9 +3,10 @@ import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeProvider.jsx";
 import BtnDarkMode from "./BtnDarkMode";
 import ToggleTheme from "./ThemeToggler.jsx";
+import ToggleLang from "./LangToggler.jsx";
 
 const Navbar = () => {
-  const { currentTheme, t, changeLanguage } = useContext(ThemeContext);
+  const { currentTheme, t} = useContext(ThemeContext);
   const activeLink = "nav-list__link nav-list__link--active";
   const normalLink = "nav-list__link";
 
@@ -16,12 +17,9 @@ const Navbar = () => {
         <div className="nav-row">
           <NavLink to="/" className="logo">
             <strong className={`logo-${currentTheme}`}>{t("My portfolio")}</strong>
-          </NavLink>
-            
-            <ul className="lang_selector">
-              <button className="lang_en_button" onClick={() => changeLanguage("en")}>EN</button>
-              <button className="lang_ru_button" onClick={() => changeLanguage("ru")}>RU</button>
-            </ul>
+          </NavLink>          
+
+          <ToggleLang />
 
           <BtnDarkMode />
 

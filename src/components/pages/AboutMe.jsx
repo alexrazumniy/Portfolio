@@ -15,7 +15,7 @@ const AboutMe = () => {
   return (
     <main className="section">
       <div className="container">
-        <h1 className="title-1">About Me</h1>
+        <h1 className="title-1">{t("About me")}</h1>
         <h5 className="about_me_text">{t("I am interested in")}</h5>
         <h5 className="about_me_text">{t("I am a team player")}</h5>
         <h5 className="about_me_text">{t("Glad to be")}</h5>

@@ -31,19 +31,19 @@
 			&-theme-1 {
 				color: var(--theme-1);
 			}
-		
+
 			&-theme-2 {
 				color: var(--theme-2);
 			}
-		
+
 			&-theme-3 {
 				color: var(--theme-3);
 			}
-		
+
 			&-theme-4 {
 				color: var(--theme-4);
 			}
-		
+
 			&-theme-5 {
 				color: var(--theme-5);
 			}
@@ -54,17 +54,17 @@
 
 			&--active {
 				position: relative;
-			}
 
-			::before {
-				content: '';
-				position: absolute;
-				left: 0;
-				top: 100%;
-				display: block;
-				height: 2px;
-				width: 100%;
-				background-color: var(--accent);
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 100%;
+					display: block;
+					height: 2px;
+					width: 100%;
+					background-color: var(--accent);
+				}
 			}
 		}
 	}
@@ -112,6 +112,7 @@
 	border: 1px solid #d4218a;
 	border-radius: 4px;
 	padding: 5px;
+
 	&:hover {
 		cursor: pointer;
 	}

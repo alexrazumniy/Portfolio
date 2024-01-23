@@ -5,7 +5,7 @@ const MyPhotoWithAnimation = () => {
     const [animationClass, setAnimationClass] = useState("");
 
     useEffect(() => {
-        // Класс для pапуска анимации после монтирования компонента
+        // Класс для запуска анимации после монтирования компонента
         setAnimationClass("animate");
     }, []);
 

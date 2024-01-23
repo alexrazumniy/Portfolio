@@ -109,7 +109,6 @@ img {
 img,
 svg {
   max-width: 100%;
-  height: auto;
 }
 
 /* General */
@@ -119,6 +118,7 @@ h1 {
 }
 
 .section {
+  background: 10%;
   padding: 10px;
   background-image: linear-gradient(90deg, rgb(37, 125, 134), #29d663);
 }
