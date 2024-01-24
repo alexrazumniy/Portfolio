@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import translationEN from "../public/locales/en/translation.json";
 import translationRU from "../public/locales/ru/translation.json";
+import translationUA from "../public/locales/ua/translation.json";
 
 const resources = {
     en: {
@@ -10,6 +11,9 @@ const resources = {
     },
     ru: {
         translation: translationRU
+    },
+    ua: {
+        translation: translationUA
     }
 };
 
@@ -21,8 +25,8 @@ i18n
         supportedLngs: ["en", "ru", "ua"],
         fallbackLng: "en",
         detection: {
-            order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],
-            caches: ["cookie"]
+            order: ["localStorage", "cookie", "htmlTag", "path", "subdomain"],
+            caches: ["localStorage"]
         },
 
     });

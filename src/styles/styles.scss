@@ -16,9 +16,12 @@
   --green: rgb(17, 39, 21);
   --white: #fff;
   --purple: #5c62ec;
+  
+  --test: #2ac9d4;
 
   /* Nav */
-  --nav-bg: var(--black);
+  --nav-bg: var(--test);
+  // --nav-bg: var(--black);
   --nav-border: var(--black-border);
   --nav-text: var(--white);
 
@@ -27,7 +30,8 @@
   --header-text: var(--white);
 
   /* Footer */
-  --footer-bg: var(--black);
+  --footer-bg: var(--test);
+  // --footer-bg: var(--black);
   --footer-text: var(--white);
 
   /* Light mode */

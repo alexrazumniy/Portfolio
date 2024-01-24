@@ -1,7 +1,7 @@
 import img01 from "./../assets/projects/project01.jpg";
 import img02 from "./../assets/projects/project02.jpg";
 import img03 from "./../assets/projects/project03.jpg";
-import img04 from "./../assets/projects/04.jpg";
+import img04 from "./../assets/projects/04-big.jpg";
 
 const projectslist = [
   {
