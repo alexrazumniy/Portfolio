@@ -7,7 +7,7 @@ const Home = () => {
       <Header />
       <main className="section">
         <Skills />
-      </main >
+      </main>
     </>
   );
 };

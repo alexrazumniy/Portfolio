@@ -12,26 +12,19 @@
   /* Colors */
   --blackpure: #000;
   --black: #171718;
-  --black-border: #26292d;
   --green: rgb(17, 39, 21);
   --white: #fff;
   --purple: #5c62ec;
   
-  --test: #2ac9d4;
+  --test: #2a43d4;
 
-  /* Nav */
   --nav-bg: var(--test);
-  // --nav-bg: var(--black);
-  --nav-border: var(--black-border);
   --nav-text: var(--white);
 
-  /* Header */
-  --header-bg: var(--green); //////// Pick the color!
+  --header-bg: var(--green);
   --header-text: var(--white);
 
-  /* Footer */
   --footer-bg: var(--test);
-  // --footer-bg: var(--black);
   --footer-text: var(--white);
 
   /* Light mode */
@@ -65,29 +58,16 @@
 html,
 body {
   min-height: 100vh;
-  font-family: "DM Sans", sans-serif;
-  letter-spacing: -0.5px;
-
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* Light mode */
   background-color: var(--page-bg);
   color: var(--text-color);
 }
 
-/* Reset and base styles  */
 * {
   padding: 0px;
   margin: 0px;
   border: none;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-#root {
-  // min-height: 100vh;
 }
 
 h1,
@@ -99,11 +79,6 @@ h6,
 p {
   // font-size: inherit;
   font-weight: inherit;
-}
-
-ul,
-ul li {
-  list-style: none;
 }
 
 img {
@@ -122,7 +97,6 @@ h1 {
 }
 
 .section {
-  background: 10%;
   padding: 10px;
   background-image: linear-gradient(90deg, rgb(37, 125, 134), #29d663);
 }

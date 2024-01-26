@@ -1,19 +1,13 @@
 .image_container {
-  position: absolute;
-  top: 25px;
-  left: 25px;
+  // position: absolute;
+  // top: 25px;
+  // left: 25px;
   width: 0;
   overflow: hidden;
-  border-radius: 50%;
+  // border-radius: 50%;
   transition: width 1.5s ease;
 }
 
 .animate {
-  width: 200px;
-  /* Целевая ширина изображения */
+  width: 200px; /* Целевая ширина изображения */  
 }
-
-// .image_container img {
-//   width: 100%;
-//   height: auto;
-// }

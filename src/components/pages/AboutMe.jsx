@@ -14,16 +14,13 @@ const AboutMe = () => {
 
   return (
     <main className="section">
-      <div className="container">
-        <h1 className="title-1">{t("About me")}</h1>
-        <h5 className="about_me_text">{t("I am interested in")}</h5>
-        <h5 className="about_me_text">{t("I am a team player")}</h5>
-        <h5 className="about_me_text">{t("Glad to be")}</h5>
+      <h1 className="title-1">{t("About me")}</h1>
+      <div className="container flex">
         <div className="about_me flex">
           <div className="profile">
             <ul className="personal_info">
               <li className="personal_info__item flex">
-                <img className="contact_item_sign"src={location_sign} alt="location_sign" />
+                <img className="contact_item_sign" src={location_sign} alt="location_sign" />
                 <h3>{t("Kharkiv, Ukraine")}</h3>
               </li>
               <li className="personal_info__item flex">
@@ -37,7 +34,7 @@ const AboutMe = () => {
                 <h3>+38 099 633 56 44</h3>
               </li>
               <li className="personal_info__item flex">
-                <img className="contact_item_sign"src={email} alt="email" />
+                <img className="contact_item_sign" src={email} alt="email" />
                 <h3>ncecoexp@gmail.com</h3>
               </li>
               {/* <li className="personal_info__item flex">
@@ -48,13 +45,13 @@ const AboutMe = () => {
                 <img className="contact_item_sign" src={student_cap} alt="student_cap" />
                 <h2>{t("Education")}</h2>
               </li>
-              <h3>Byte Education IT-school. 2022-2023</h3>
-              <h3>{t("Learned")} HTML, CSS, SCSS, JavaScript, React, Redux, Mastered Create-react-app, Vite, React Router, Webpack, Git, Node.js, AJAX</h3>
+              <h3><b>Byte Education IT-school. 2022-2023</b></h3>
+              <h3>{t("Learned")} HTML, CSS, SCSS, SASS, JavaScript, Canvas, Git, Node.js, AJAX, React, React devtools, React Router, Styled components, Redux, Vite, Webpack etc.</h3>
             </ul>
           </div>
           <div>
-            <h3><strong>{t("Hard skills")}</strong></h3>
             <ul className="hard_skills">
+              <h3 className="skills_header"><strong>{t("Hard skills")}</strong></h3>
               <li className="hard_skills__item">HTML/CSS</li>
               <li className="hard_skills__item">JavaScript</li>
               <li className="hard_skills__item">React</li>
@@ -68,8 +65,8 @@ const AboutMe = () => {
             </ul>
           </div>
           <div>
-            <h3><strong>{t("Soft skills")}</strong></h3>
             <ul className="soft_skills">
+              <h3 className="skills_header"><strong>{t("Soft skills")}</strong></h3>
               <li className="soft_skills__item">{t("Communication")}</li>
               <li className="soft_skills__item">{t("Teamwork skills")}</li>
               <li className="soft_skills__item">{t("Easy adaptation")}</li>
@@ -79,6 +76,9 @@ const AboutMe = () => {
               <li className="soft_skills__item">{t("Getting Things Done")}</li>
             </ul>
           </div>
+          <h5 className="about_me_text">{t("I am interested in")}</h5>
+        {/* <h5 className="about_me_text">{t("I am a team player")}</h5> */}
+        {/* <h5 className="about_me_text">{t("Glad to be")}</h5> */}
         </div>
       </div>
     </main>
