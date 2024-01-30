@@ -1,5 +1,8 @@
 import { useState, useContext, useRef, useEffect } from "react";
 import { ThemeContext } from "./context/ThemeProvider.jsx";
+import flag_en from "../assets/icons/flag-en.svg";
+import flag_ua from "../assets/icons/flag-ua.svg";
+import flag_ru from "../assets/icons/flag-ru.svg";
 
 const ToggleLang = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -7,7 +10,15 @@ const ToggleLang = () => {
     const menuRef = useRef(null);
 
     const language = localStorage.getItem("i18nextLng");
-    const uppercasedLanguage = language ? language.toUpperCase() : '';
+    // const uppercasedLanguage = language ? language.toUpperCase() : '';
+
+    const languages = {
+        en: { label: "English", flag: flag_en },
+        ua: { label: "Українська", flag: flag_ua },
+        ru: { label: "Русский", flag: flag_ru },
+    };
+
+    const menuLanguages = Object.keys(languages).filter((lang) => lang !== language);
 
     const toggleMenu = () => {
         setMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
@@ -28,21 +39,18 @@ const ToggleLang = () => {
 
     return (
         <div ref={menuRef}>
-            <button className="lang_selector" onClick={toggleMenu}>
-                {uppercasedLanguage}
+            <button className="lang_toggler" onClick={toggleMenu}>
+                {languages[language] && <img src={languages[language].flag} alt={`flag_${language}`} />}
             </button>
             {isMenuOpen && (
-                <div className="lang_menu" >
+                <div className="lang_menu">
                     <ul className="lang_menu_list">
-                        <li className="lang_menu_list_item" onClick={() => changeLanguage("en")}>
-                            <p>English</p>
-                        </li>
-                        <li className="lang_menu_list_item" onClick={() => changeLanguage("ru")}>
-                            <p>Русский</p>
-                        </li>
-                        <li className="lang_menu_list_item" onClick={() => changeLanguage("ua")}>
-                            <p>Українська</p>
-                        </li>
+                        {menuLanguages.map((lang) => (
+                            <li key={lang} className="lang_menu_list_item" onClick={() => changeLanguage(lang)}>
+                                <img src={languages[lang].flag} alt={`flag_${lang}`} />
+                                <p>{languages[lang].label}</p>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             )}

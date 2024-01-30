@@ -6,11 +6,11 @@ const MyPhotoWithAnimation = () => {
 
     useEffect(() => {
         // Класс для запуска анимации после монтирования компонента
-        setAnimationClass("animate");
+        setAnimationClass("animate_photo");
     }, []);
 
     return (
-        <div className={`image_container ${animationClass}`}>
+        <div className={`photo_container ${animationClass}`}>
             <img src={my_photo} alt="my_photo" />
         </div>
     );

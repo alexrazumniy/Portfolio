@@ -90,12 +90,11 @@
 }
 
 // Language menu
-.lang_selector {
+.lang_toggler {
 	margin-right: 20px;
-	padding: 5px;
-	border-radius: 5px;
+	padding: 5px 7px;
+	border-radius: 3px;
 	background-color: #1accc3;
-	border: 2px solid #ff03ff;
 	font-family: inherit;
 
 	&:hover {
@@ -107,27 +106,25 @@
 	position: relative;
 	border-radius: 5px;
 	z-index: 2;
+	transition: all 1.5s ease;
 
 	&_list {
 		position: absolute;
 		top: -2px;
-		left: -40px;
+		// left: -7px;
 		background-color: #1accc3;
-		border-radius: 5px;
-		padding: 10px;
+		border-radius: 0 0 3px 3px;
+		padding: 4px;
 		text-align: center;
+		list-style: none;
 
 		&_item {
-			padding: 5px 7px;
+			padding: 10px 3px;
 			border-radius: 5px;
-
-			&:not(:last-of-type) {
-				margin-bottom: 10px;
-			}
 
 			&:hover {
 				cursor: pointer;
-				background-color: #353e86;
+				background-color: #4debe3;
 			}
 		}
 	}
