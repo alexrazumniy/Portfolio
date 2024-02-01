@@ -37,13 +37,14 @@ const ToggleTheme = () => {
   }, []);
 
   return (
-    <div ref={menuRef} >
+    <div ref={menuRef}>
       {/* <p className="theme-title">Change your theme color</p> */}
-      <img className="theme-container" onClick={toggleMenu} src={color_switcher} alt="color_switcher" />
+      {/* Вставить как подсказку! */}
+      <img className="color_switcher_icon" onClick={toggleMenu} src={color_switcher} alt="color_switcher" />
       {isMenuOpen && (
-        <div>
+        <div className="theme-container">
           {themes.map((theme) => (
-            <button className={`btn-theme btn-${theme} ${rotatedButtons[theme] ? "rotated" : ""}`} key={theme}
+            <button className={`btn-color-theme btn-color-${theme} ${rotatedButtons[theme] ? "rotated" : ""}`} key={theme}
               onClick={() => { changeTheme(theme); handleClickRotate(theme) }}
               onMouseLeave={() => handleMouseLeave(theme)}
             >

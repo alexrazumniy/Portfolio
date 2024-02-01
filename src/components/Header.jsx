@@ -9,7 +9,8 @@ import viber from "./../assets/icons/viber.svg";
 import whatsapp from "./../assets/icons/whatsapp.svg";
 import email from "./../assets/icons/email.svg";
 
-import Button from "./Button.jsx";
+// import Button from "./Button.jsx";
+// import Sidebar from "./Sidebar.jsx";
 
 const Header = () => {
   const { currentTheme, t } = useContext(ThemeContext);
@@ -18,13 +19,12 @@ const Header = () => {
     <div>
       <header className={`header flex header-${currentTheme}`}>
         <MyPhotoWithAnimation />
-
+        {/* Name and intro text */}
         <div className="intro">
           <h1 className="intro_name">
             <em>{t("Alex Rozumniy")}</em>
             <br />{t("Frontend developer")}
           </h1>
-
           <div className="intro_slogan">
             <p>{t("with passion for learning and creating")}</p>
           </div>
@@ -54,7 +54,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <Button />
+        {/* <Button /> */}
       </header>
     </div>
   );

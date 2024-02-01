@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
-  width: 220px;
+  width: 180px;
   background-image: linear-gradient(90deg, #84e9f5, #38bc65);
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px ;
   border: 1px solid #4a5032;
   box-shadow: #6E7849 0px 0px 19px;
   color: #ffffff;
@@ -15,7 +15,7 @@
 }
 
 .button:hover {
-  padding: 15px;
+  // padding: 15px;
   opacity: 0.5;
   transition: all 0.2s linear;
   transform: translate(1px, 1px);

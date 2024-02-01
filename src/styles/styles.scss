@@ -1,12 +1,13 @@
 @import "./blocks/navbar.scss";
+@import "./blocks/colorthemetoggler.scss";
 @import "./blocks/header.scss";
 @import "./blocks/myphoto.scss";
-@import "./blocks/skills.scss";
-@import "./blocks/projects.scss";
+@import "./blocks/sidebar.scss";
 @import "./blocks/about_me.scss";
-@import "./blocks/footer.scss";
+@import "./blocks/projects.scss";
 @import "./blocks/button.scss";
-@import "./blocks/themes.scss";
+@import "./blocks/skills.scss";
+@import "./blocks/footer.scss";
 
 :root {
   /* Colors */

@@ -2,20 +2,17 @@
 	padding: 25px;
 	background-color: var(--nav-bg);
 	// color: var(--nav-text);
-	
-	&-row {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		column-gap: 30px;
-	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
 	&-list {
 		display: flex;
 		align-items: center;
-		column-gap: 25px;
+		column-gap: 35px;
+		// font-size: 1.4em;
 		font-size: 16px;
-		font-weight: 700;
+		// font-weight: 700;
 		list-style: none;
 
 		&__link {
@@ -63,7 +60,7 @@
 }
 
 .logo {
-	margin-right: auto;
+	// margin-right: auto;
 	color: var(--nav-text);
 	font-size: 24px;
 	font-weight: 700;
@@ -89,12 +86,17 @@
 	}
 }
 
+.toggle_buttons {
+	display: flex;
+	align-items: center;
+	column-gap: 25px;
+}
+
 // Language menu
 .lang_toggler {
-	margin-right: 20px;
 	padding: 5px 7px;
-	border-radius: 3px;
-	background-color: #1accc3;
+	// border-radius: 3px;
+	background-color: rgb(26, 204, 195, 0.5);
 	font-family: inherit;
 
 	&:hover {
@@ -110,16 +112,15 @@
 
 	&_list {
 		position: absolute;
-		top: -2px;
+		top: 0px;
 		// left: -7px;
-		background-color: #1accc3;
-		border-radius: 0 0 3px 3px;
+		background-color: rgb(26, 204, 195, 0.5);
+		// border-radius: 0 3px 3px 3px;
 		padding: 4px;
 		text-align: center;
-		list-style: none;
 
 		&_item {
-			padding: 10px 3px;
+			padding: 10px 5px;
 			border-radius: 5px;
 
 			&:hover {

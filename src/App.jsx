@@ -6,13 +6,13 @@ import Projects from "./components/pages/Projects";
 import Projectpage from "./components/pages/Projectpage";
 import AboutMe from "./components/pages/AboutMe";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/utils/scrollToTop";
+import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
     <div className="container">
       <Router>
-        <ScrollToTop />
+        <Sidebar />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
