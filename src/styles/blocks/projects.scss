@@ -1,18 +1,20 @@
 .projects {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
 	justify-content: center;
-	flex-wrap: wrap;
-	// column-gap: 30px;
+	// column-gap: 20px;
 	// row-gap: 30px;
 	gap: 25px;
 	list-style: none;
+	background: var(--background);
 }
 
 .project {
 	max-width: 350px;
 	background: var(--project-card-bg);
 	box-shadow: var(--box-shadow);
-	border-radius: 10px;
+	border-radius: 5px;
+	padding: 5px;
 	text-align: center;
 
 	&-theme-1 {
@@ -36,11 +38,11 @@
 	}
 
 	&__img {
-		border-radius: 10px;
+		border-radius: 4px;
 	}
 
 	&__title {
-		padding: 15px 20px 25px;
+		padding: 5px;
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 1.3;

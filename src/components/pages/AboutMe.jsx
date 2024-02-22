@@ -5,9 +5,10 @@ import phone from "../../assets/icons/phone.svg";
 import telegram_small from "../../assets/icons/telegram_small.svg";
 import viber from "../../assets/icons/viber.svg";
 import whatsapp from "../../assets/icons/whatsapp.svg";
-import email from "../../assets/icons/email.svg";
+import email from "../../assets/icons/email_black.svg";
 import student_cap from "../../assets/icons/student_cap.svg";
-// import portfolio from "../../assets/icons/portfolio.svg";
+import portfolio from "../../assets/icons/portfolio.svg";
+import Skills from "../Skills";
 
 const AboutMe = () => {
   const { currentTheme, t } = useContext(ThemeContext);
@@ -17,7 +18,7 @@ const AboutMe = () => {
       <h1 className="title-1">{t("About me")}</h1>
       <div className="container flex">
         <div className="about_me flex">
-          <div className="profile">
+          {/* <div className="profile">
             <ul className="personal_info">
               <li className="personal_info__item flex">
                 <img className="contact_item_sign" src={location_sign} alt="location_sign" />
@@ -37,10 +38,10 @@ const AboutMe = () => {
                 <img className="contact_item_sign" src={email} alt="email" />
                 <h3>ncecoexp@gmail.com</h3>
               </li>
-              {/* <li className="personal_info__item flex">
+              <li className="personal_info__item flex">
                 <img className="contact_item_sign" src={portfolio} alt="portfolio" />
                 <h2>Experience</h2>
-              </li> */}
+              </li>
               <li className="personal_info__item flex">
                 <img className="contact_item_sign" src={student_cap} alt="student_cap" />
                 <h2>{t("Education")}</h2>
@@ -48,7 +49,7 @@ const AboutMe = () => {
               <h3><b>Byte Education IT-school. 2022-2023</b></h3>
               <h3>{t("Learned")} HTML, CSS, SCSS, SASS, JavaScript, Canvas, Git, Node.js, AJAX, React, React devtools, React Router, Styled components, Redux, Vite, Webpack etc.</h3>
             </ul>
-          </div>
+          </div> */}
           <div>
             <ul className="hard_skills">
               <h3 className="skills_header"><strong>{t("Hard skills")}</strong></h3>
@@ -76,11 +77,12 @@ const AboutMe = () => {
               <li className="soft_skills__item">{t("Getting Things Done")}</li>
             </ul>
           </div>
-          <h5 className="about_me_text">{t("I am interested in")}</h5>
-        {/* <h5 className="about_me_text">{t("I am a team player")}</h5> */}
-        {/* <h5 className="about_me_text">{t("Glad to be")}</h5> */}
+          {/* <h5 className="about_me_text">{t("I am interested in")}</h5> */}
+          {/* <h5 className="about_me_text">{t("I am a team player")}</h5> */}
+          {/* <h5 className="about_me_text">{t("Glad to be")}</h5> */}
         </div>
       </div>
+      <Skills />
     </main>
   );
 };

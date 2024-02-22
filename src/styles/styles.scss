@@ -2,6 +2,7 @@
 @import "./blocks/colorthemetoggler.scss";
 @import "./blocks/header.scss";
 @import "./blocks/myphoto.scss";
+@import "./blocks/contact_info.scss";
 @import "./blocks/sidebar.scss";
 @import "./blocks/about_me.scss";
 @import "./blocks/projects.scss";
@@ -11,21 +12,24 @@
 
 :root {
   /* Colors */
-  --blackpure: #000;
-  --black: #171718;
-  --green: rgb(17, 39, 21);
+  --green: rgb(73, 189, 224);
   --white: #fff;
   --purple: #5c62ec;
-  
-  --test: #2a43d4;
+  --background: #7ec5ae;
 
-  --nav-bg: var(--test);
+  --nav-bg: var(--green);
   --nav-text: var(--white);
 
-  --header-bg: var(--green);
+  --header-bg: var(--background);
   --header-text: var(--white);
 
-  --footer-bg: var(--test);
+  --projects-bg: var(--background);
+
+  --about-me: var(--background);
+
+  --contact: var(--background);
+
+  --footer-bg: var(--green);
   --footer-text: var(--white);
 
   /* Light mode */
@@ -36,7 +40,7 @@
 
   --project-card-bg: var(--white);
   --project-card-text: var(--black);
-  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+  --box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
 
   /* Themes */
   --theme-1: #961313;
@@ -98,12 +102,13 @@ h1 {
 }
 
 .section {
+  max-height: 100vh;
   padding: 10px;
-  background-image: linear-gradient(90deg, rgb(37, 125, 134), #29d663);
+  background-image: linear-gradient(90deg, rgb(153, 197, 202), #43a050);
 }
 
 .container {
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
 }
 

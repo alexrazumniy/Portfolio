@@ -1,9 +1,13 @@
 .footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 25px;
-	background-color: var(--footer-bg);
+	background: linear-gradient(30deg, var(--nav-bg), var(--green));
+	// background-color: var(--footer-bg);
 	// color: var(--footer-text);
 }
 

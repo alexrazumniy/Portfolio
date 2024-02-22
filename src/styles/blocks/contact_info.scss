@@ -1,0 +1,45 @@
+.contacts {
+	position: absolute;
+	right: 70px;
+	top: 130px;
+	text-align-last: left;
+	border: 4px solid transparent;
+	background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+	border-radius: 4px;
+	animation: background 3s infinite alternate;
+}
+
+@keyframes background {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 0 200px;
+	}
+}
+
+.contact_info {
+	padding: 5px 45px;
+	background: linear-gradient(30deg, rgb(122, 238, 151, 0.5), rgba(85, 168, 194, 0.8));
+
+	box-shadow: 13px 10px 23px -5px rgba(0, 0, 0, 0.75);
+
+	&__item {
+		align-items: center;
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+}
+
+
+.contact_sign {
+
+	&:last-of-type {
+		margin-right: 20px;
+	}
+
+	&:not(:first-child) {
+		margin-left: -25px;
+	}
+}

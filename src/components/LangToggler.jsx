@@ -1,8 +1,8 @@
 import { useState, useContext, useRef, useEffect } from "react";
 import { ThemeContext } from "./context/ThemeProvider.jsx";
-import flag_en from "../assets/icons/flag-en.svg";
-import flag_ua from "../assets/icons/flag-ua.svg";
-import flag_ru from "../assets/icons/flag-ru.svg";
+import flag_en from "../assets/icons/flag_en.svg";
+import flag_ua from "../assets/icons/flag_ua.svg";
+import flag_ru from "../assets/icons/flag_ru.svg";
 
 const ToggleLang = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);

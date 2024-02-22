@@ -1,10 +1,12 @@
 .nav {
+	position: relative;
 	padding: 25px;
-	background-color: var(--nav-bg);
-	// color: var(--nav-text);
+	background: linear-gradient(30deg, var(--nav-bg), var(--green));
+	// background-color: var(--nav-bg);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	color: var(--nav-text);
 
 	&-list {
 		display: flex;
@@ -16,7 +18,7 @@
 		list-style: none;
 
 		&__link {
-			color: var(--nav-text);
+			// color: var(--nav-text);
 			transition: opacity 0.2s ease-in;
 
 			&-theme-1 {
@@ -118,6 +120,7 @@
 		// border-radius: 0 3px 3px 3px;
 		padding: 4px;
 		text-align: center;
+		list-style: none;
 
 		&_item {
 			padding: 10px 5px;

@@ -1,17 +1,38 @@
-.color_switcher_icon {
+.toggle_color_container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	/* Добавлено свойство opacity */
+	/* Изначально меню скрыто */
+}
+
+.toggle_color_icon {
 	// position: absolute;
 	top: 20px;
-	left: 20px;
+	margin: auto 0;
 	width: 32px;
 }
 
-// .theme-container {
-// 	position: absolute;
-// 	// top: 20px;
-// 	// left: 20px;
-// 	display: flex;
-// 	flex-direction: column;
-// 	// width: 50px;
+.toggle_color_menu {
+	transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+	position: absolute;
+	top: 20px;
+	left: -100px;
+	opacity: 0;
+}
+
+.toggle_color_menu.open {
+	position: absolute;
+	top: 20px;
+	left: -100px;
+	transform: translateX(-100%);
+	opacity: 1;
+}
+
+// .toggle_color_container.open {
+// 	transform: translateX(-100%);
+// 	/* При открытии меню меняем прозрачность на 1 */
 // }
 
 .theme-title {
@@ -20,7 +41,7 @@
 	font-weight: bold;
 }
 
-.btn-color-theme {
+.toggle_color_btn {
 	position: relative;
 	width: 20px;
 	height: 20px;
@@ -49,23 +70,23 @@
 		}
 	}
 
-	&-1 {
+	&-theme-1 {
 		background: var(--theme-1);
 	}
 
-	&-2 {
+	&-theme-2 {
 		background: var(--theme-2);
 	}
 
-	&-3 {
+	&-theme-3 {
 		background: var(--theme-3);
 	}
 
-	&-4 {
+	&-theme-4 {
 		background: var(--theme-4);
 	}
 
-	&-5 {
+	&-theme-5 {
 		background: var(--theme-5);
 	}
 }

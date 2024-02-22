@@ -1,7 +1,7 @@
 import linkedin from "../assets/icons/linkedin_blue.svg";
 import github from "../assets/icons/gitHub.svg";
 import telegram from "../assets/icons/telegram.svg";
-import email from "../assets/icons/email.svg";
+import email from "../assets/icons/email_white.svg";
 
 const Footer = () => {
   return (

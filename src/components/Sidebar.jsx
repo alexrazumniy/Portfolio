@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { ThemeContext } from "./context/ThemeProvider.jsx";
 import BtnDarkMode from "./BtnDarkMode";
-import ToggleTheme from "./ThemeToggler.jsx";
+import ToggleColorTheme from "./ThemeToggler.jsx";
 import ToggleLang from "./LangToggler.jsx";
+import Contacts from "./ContactInfo.jsx";
 
 import home from "./../assets/icons/home.svg";
 import info from "./../assets/icons/info_sign.svg";
@@ -14,65 +15,67 @@ import download_cv from "./../assets/icons/download_cv.svg";
 
 
 const Sidebar = () => {
+
+  const [isContactsOpen, setContactsOpen] = useState(false);
+
+  const showContacts = () => {
+    setContactsOpen((isContactsOpen) => !isContactsOpen);
+  }
+
   const { currentTheme, t } = useContext(ThemeContext);
-  const activeLink = "sidebar_nav-list__link--active";
-  const normalLink = "sidebar_nav-list__link";
 
   return (
-    <div>
-      <nav className="sidebar_nav">
-        <ul className="sidebar_nav-list">
-          {/* <li className={`sidebar_nav-list__link-${currentTheme}`}> */}
-          <li className="sidebar_nav__link">
-            <NavLink to="/">
-              <img src={home} alt="home" className="sidebar_nav__link-image" />
-              <button className="sidebar_nav__link-btn">
-                {t("Home")}
-              </button>
-            </NavLink>
-          </li>
+    <>
+    <div className="sidebar_nav">
+      <NavLink to="/">
+        <button className={`sidebar_nav__link sidebar_nav__link-${currentTheme}`}>
+          <span className="sidebar_nav__link-text">{t("Home")}</span>
+          <img src={home} alt="home" className="sidebar_nav__link-image" />
+        </button>
+      </NavLink>
 
-          <li className="sidebar_nav__link">
-            <img src={info} alt="info" className="sidebar_nav__link-image" />
-            <button className="sidebar_nav__link-btn">
-              {t("Contacts")}
-            </button>
-          </li>
+      <NavLink to="/projects">
+        <button className="sidebar_nav__link">
+          <span className="sidebar_nav__link-text">{t("Projects")}</span>
+          <img src={portfolio} alt="portfolio" className="sidebar_nav__link-image" />
+        </button>
+      </NavLink>
 
-          <li className="sidebar_nav__link">
-            <NavLink to="/projects">
-              <img src={portfolio} alt="portfolio" className="sidebar_nav__link-image" />
-              <button className="sidebar_nav__link-btn">
-                {t("Projects")}
-              </button>
-            </NavLink>
-          </li>
+      <NavLink to="/about_me">
+        <button className="sidebar_nav__link">
+          <span className="sidebar_nav__link-text">{t("About me")}</span>
+          <img src={man} alt="man" className="sidebar_nav__link-image" />
+        </button>
+      </NavLink>
 
-          <li className="sidebar_nav__link">
-            <NavLink to="/about_me">
-              <img src={man} alt="man" className="sidebar_nav__link-image" />
-              <button className="sidebar_nav__link-btn">
-                {t("About me")}
-              </button>
-            </NavLink>
-          </li>
+      <NavLink to="/contact_me">
+        <button className="sidebar_nav__link">
+          <span className="sidebar_nav__link-text">{t("Contact me")}</span>
+          <img src={man} alt="man" className="sidebar_nav__link-image" />
+        </button>
+      </NavLink>
 
-          <li className="sidebar_nav__link">
-            <a href="/src/assets/CV_Rozumniy_Oleksii_Frontend.pdf" download="CV_Rozumniy_Oleksii_Frontend.pdf" >
-              <img src={download_cv} alt="download_cv" className="sidebar_nav__link-image" />
-              <button className="sidebar_nav__link-btn">
-                {t("Download CV")}
-              </button>
-            </a>
-          </li>
-        </ul>
-        <div className="toggle_buttons">
-          <ToggleLang />
-          <ToggleTheme />
-          <BtnDarkMode />
-        </div>
-      </nav>
+      <button onClick={showContacts} className="sidebar_nav__link">
+        <span className="sidebar_nav__link-text">{t("Contacts")}</span>
+        <img src={info} alt="info" className="sidebar_nav__link-image" />
+      </button>
+
+      <a href="" className="sidebar_nav__link" onClick={(e) => e.preventDefault()}>
+        {/* <a href="/src/assets/CV_Rozumniy_Oleksii_Frontend.pdf" className="sidebar_nav__link" download="CV_Rozumniy_Oleksii_Frontend.pdf" > */}
+
+        <p className="sidebar_nav__link-text">{t("Download CV")}</p>
+        <img src={download_cv} alt="download_cv" className="sidebar_nav__link-image" />
+      </a>
+
+      {/* <img className="toggle_color_icon" onClick={toggleMenu} src={color_switcher} alt="color_switcher" /> */}
+
+
+      <ToggleColorTheme />
+      {/* <ToggleLang /> */}
+      {/* <BtnDarkMode /> */}
     </div>
+    {isContactsOpen && <Contacts />}
+  </>
   );
 };
 
