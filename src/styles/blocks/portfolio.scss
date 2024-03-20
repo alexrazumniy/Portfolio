@@ -6,7 +6,6 @@
 	// row-gap: 30px;
 	gap: 25px;
 	list-style: none;
-	background: var(--background);
 }
 
 .project {
@@ -70,4 +69,11 @@
 			margin-bottom: 5px;
 		}
 	}
+}
+
+.go_back_btn {
+	// position: absolute;
+	top: 200px;
+	left: 0;
+	background: #000;
 }

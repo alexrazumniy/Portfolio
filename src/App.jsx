@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
 import Home from "./components/pages/Home";
-import Projects from "./components/pages/Portfolio";
+import Portfolio from "./components/pages/Portfolio";
 import Projectpage from "./components/pages/Projectpage";
 import AboutMe from "./components/pages/AboutMe";
 import Footer from "./components/Footer";
@@ -15,11 +14,10 @@ const App = () => {
     <div className="container">
       <Router>
         <Navbar />
-        {/* <Header /> */}
         <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/project/:id" element={<Projectpage />} />
           <Route path="/about_me" element={<AboutMe />} />
           <Route path="/contact_me" element={<ContactMe />} />

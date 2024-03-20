@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { projectslist } from "../../helpers/projectsList";
 
 const Projectpage = () => {
@@ -10,6 +10,9 @@ const Projectpage = () => {
 
   return (
     <div className="project-details">
+      <Link to="/portfolio">
+        <button>{t("Back")}</button>
+      </Link>
       <h1 className="title-1">{project.title}</h1>
       <img
         src={project.img}

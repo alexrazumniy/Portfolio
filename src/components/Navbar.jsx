@@ -4,7 +4,6 @@ import { ThemeContext } from "./context/ThemeProvider.jsx";
 import BtnDarkMode from "./BtnDarkMode";
 import ToggleColorTheme from "./ThemeToggler.jsx";
 import ToggleLang from "./LangToggler.jsx";
-import Sidebar from "./Sidebar.jsx";
 
 const Navbar = () => {
   const { currentTheme, t } = useContext(ThemeContext);
@@ -31,7 +30,7 @@ const Navbar = () => {
 
         <li className={`nav-list__link nav-list__link-${currentTheme}`}>
           <NavLink
-            to="/projects"
+            to="/portfolio"
             className={({ isActive }) =>
               isActive ? activeLink : normalLink
             }

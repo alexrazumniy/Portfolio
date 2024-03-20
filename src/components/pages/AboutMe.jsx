@@ -18,26 +18,8 @@ const AboutMe = () => {
       <h1 className="title-1">{t("About me")}</h1>
       <div className="container flex">
         <div className="about_me flex">
-          {/* <div className="profile">
+          <div className="profile">
             <ul className="personal_info">
-              <li className="personal_info__item flex">
-                <img className="contact_item_sign" src={location_sign} alt="location_sign" />
-                <h3>{t("Kharkiv, Ukraine")}</h3>
-              </li>
-              <li className="personal_info__item flex">
-                <img className="contact_item_sign" src={phone} alt="phone" />
-                <h3>+38 099 633 56 44</h3>
-              </li>
-              <li className="personal_info__item flex">
-                <img className="contact_item_sign" src={whatsapp} alt="whatsapp" />
-                <img className="contact_item_sign" src={viber} alt="viber" />
-                <img className="contact_item_sign" src={telegram_small} alt="telegram" />
-                <h3>+38 099 633 56 44</h3>
-              </li>
-              <li className="personal_info__item flex">
-                <img className="contact_item_sign" src={email} alt="email" />
-                <h3>ncecoexp@gmail.com</h3>
-              </li>
               <li className="personal_info__item flex">
                 <img className="contact_item_sign" src={portfolio} alt="portfolio" />
                 <h2>Experience</h2>
@@ -49,7 +31,7 @@ const AboutMe = () => {
               <h3><b>Byte Education IT-school. 2022-2023</b></h3>
               <h3>{t("Learned")} HTML, CSS, SCSS, SASS, JavaScript, Canvas, Git, Node.js, AJAX, React, React devtools, React Router, Styled components, Redux, Vite, Webpack etc.</h3>
             </ul>
-          </div> */}
+          </div>
           <div>
             <ul className="hard_skills">
               <h3 className="skills_header"><strong>{t("Hard skills")}</strong></h3>

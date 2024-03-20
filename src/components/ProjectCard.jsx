@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeProvider";
 import { NavLink } from "react-router-dom";
 
-const ProjectCard = ({ id, img, title, }) => {
+const ProjectCard = ({ id, img, title }) => {
   const { currentTheme } = useContext(ThemeContext)
 
   return (
