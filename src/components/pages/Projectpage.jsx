@@ -9,10 +9,7 @@ const Projectpage = () => {
   const project = projectslist[id];
 
   return (
-    <div className="project-details">
-      <Link to="/portfolio">
-        <button>{t("Back")}</button>
-      </Link>
+    <div className="project-details">      
       <h1 className="title-1">{project.title}</h1>
       <img
         src={project.img}
@@ -27,6 +24,9 @@ const Projectpage = () => {
           {t("See it")}
         </a>
       </button>
+      <Link to="/portfolio">
+        <button className="go_back_btn">{t("Back to project list")}</button>
+      </Link>
     </div>
   );
 };

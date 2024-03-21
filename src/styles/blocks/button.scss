@@ -2,7 +2,7 @@
   display: inline-block;
   width: 180px;
   background-image: linear-gradient(90deg, #84e9f5, #38bc65);
-  border-radius: 5px 0 0 5px ;
+  border-radius: 5px 0 0 5px;
   border: 1px solid #4a5032;
   box-shadow: #6E7849 0px 0px 19px;
   color: #ffffff;
@@ -12,13 +12,13 @@
   text-decoration: none;
   text-shadow: #000000 9px 5px 7px;
   transition: opacity 0.6s linear;
-}
 
-.button:hover {
-  // padding: 15px;
-  opacity: 0.5;
-  transition: all 0.2s linear;
-  transform: translate(1px, 1px);
+  &:hover {
+    // padding: 15px;
+    opacity: 0.5;
+    transition: all 0.2s linear;
+    transform: translate(1px, 1px);
+  }
 }
 
 .view-project-button {
@@ -28,12 +28,24 @@
   box-shadow: var(--box-shadow);
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
+
+  &:hover {
+    background-color: #2980b9;
+    box-shadow: none;
+    transform: translate(3px, 3px);
+    cursor: pointer;
+  }
 }
 
-.view-project-button:hover {
-  background-color: #2980b9;
-  box-shadow: none;
-  transform: translate(3px, 3px);
-  cursor: pointer;
+
+.go_back_btn {
+  padding: 20px;
+  background: transparent;
+  font-family: inherit;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

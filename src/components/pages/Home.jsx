@@ -16,7 +16,7 @@ const Home = () => {
             <br />{t("Frontend developer")}
           </h1>
           <div className="intro_slogan">
-            {/* <p>{t("with passion for learning and creating")}</p> */}
+            <p>{t("with passion for learning and creating")}</p>
           </div>
           <p className="intro_text">{t("I am a beginner frontend developer")}</p>
           {/* <Contacts /> */}
