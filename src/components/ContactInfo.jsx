@@ -13,7 +13,7 @@ const Contacts = () => {
 
   return (
     <div className="contacts_menu">
-      <div className="contacts_field">
+      <div className="contacts_menu_field">
         <div className="contacts_menu__item flex">
           <img className="contacts_menu__item_sign" src={location_sign} alt="location_sign" />
           <p className="contacts_menu__item_text">{t("Kharkiv, Ukraine")}</p>
@@ -22,12 +22,12 @@ const Contacts = () => {
           <img className="contacts_menu__item_sign" src={phone} alt="phone" />
           <p className="contact_text">+38 099 633 56 44</p>
         </div>
-        {/* <div className="contacts_menu__item flex">
+        <div className="contacts_menu__item flex">
           <img className="contacts_menu__item_sign" src={whatsapp} alt="whatsapp" />
           <img className="contacts_menu__item_sign" src={viber} alt="viber" />
           <img className="contacts_menu__item_sign" src={telegram_small} alt="telegram" />
           <p>+38 099 633 56 44</p>
-        </div> */}
+        </div>
         <div className="contacts_menu__item flex">
           <img className="contacts_menu__item_sign" src={email} alt="email" />
           <p className="contact_text">ncecoexp@gmail.com</p>

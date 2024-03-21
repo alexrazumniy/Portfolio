@@ -24,18 +24,18 @@
         &:hover .sidebar_nav__link-text {
             opacity: 1;
             right: 0;
-            transform: translateX(-30px);
+            // transform: translateX(-30px);
             width: 120px;
         }
 
         &-text {
             opacity: 0;
             position: absolute;
-            // background-color: antiquewhite;
+            background-color: var(--accent);
             right: -20px;
             padding: 16px 15px;
             border-radius: 50px;
-            transition: opacity 0.4s linear, transform 0.4s linear;
+            transition: opacity 0.1s linear, transform 0.4s linear;
         }
 
         &-image {

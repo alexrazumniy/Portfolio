@@ -1,44 +1,24 @@
 import { NavLink } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeProvider.jsx";
-import BtnDarkMode from "./BtnDarkMode";
 import ToggleColorTheme from "./ThemeToggler.jsx";
-import ToggleLang from "./LangToggler.jsx";
-import Contacts from "./ContactInfo.jsx";
 
 import home from "./../assets/icons/home.svg";
-import info from "./../assets/icons/info_sign.svg";
-// import phone from "./../assets/icons/phone.svg";
 import portfolio from "./../assets/icons/portfolio.svg";
 import man from "./../assets/icons/man.svg";
+import feedback from "./../assets/icons/feedback1.svg";
 import download_cv from "./../assets/icons/download_cv.svg";
 
 const hoverAudio = new Audio("../../public/sounds/like_console.mp3")
 
 const Sidebar = () => {
-  const [isContactsOpen, setContactsOpen] = useState(null);
-  // const [isHovered, setIsHovered] = useState(false);
-
-  const showContacts = () => {
-    setContactsOpen((isContactsOpen) => !isContactsOpen);
-  }
-
   const playHoverAudio = () => {
-    // Replace this with the actual logic to play audio
-    console.log('Audio is playing...');
+    hoverAudio.play();
   };
 
   const stopHoverAudio = () => {
-    // Replace this with the actual logic to stop audio
-    hoverAudio.pause();
     hoverAudio.currentTime = 0;
-    console.log('Audio is stopped.');
   };
-  // const stopAudio = () => {
-  //   hoverSound.pause();
-  //   hoverSound.currentTime = 0;
-  //   setIsAudioPlaying(false);
-  // };
 
   const { currentTheme, t } = useContext(ThemeContext);
 
@@ -48,11 +28,9 @@ const Sidebar = () => {
         <NavLink to="/">
           <button className={`sidebar_nav__link sidebar_nav__link-${currentTheme}`}
             onMouseEnter={() => {
-              // setIsHovered(true);
               playHoverAudio();
             }}
             onMouseLeave={() => {
-              // setIsHovered(false);
               stopHoverAudio();
             }}
           >
@@ -63,6 +41,12 @@ const Sidebar = () => {
 
         <NavLink to="/portfolio">
           <button className={`sidebar_nav__link sidebar_nav__link-${currentTheme}`}
+            onMouseEnter={() => {
+              playHoverAudio();
+            }}
+            onMouseLeave={() => {
+              stopHoverAudio();
+            }}
           >
             <span className="sidebar_nav__link-text">{t("Projects")}</span>
             <img src={portfolio} alt="portfolio" className="sidebar_nav__link-image" />
@@ -71,31 +55,37 @@ const Sidebar = () => {
 
         <NavLink to="/about_me">
           <button className={`sidebar_nav__link sidebar_nav__link-${currentTheme}`}
+            onMouseEnter={() => {
+              playHoverAudio();
+            }}
+            onMouseLeave={() => {
+              stopHoverAudio();
+            }}
           >
-            <span className="sidebar_nav__link-text">{t("About me")}</span>
+            <span className="sidebar_nav__link-text">{t("About me")}</span>
             <img src={man} alt="man" className="sidebar_nav__link-image" />
           </button>
         </NavLink>
 
         <NavLink to="/contact_me">
           <button className={`sidebar_nav__link sidebar_nav__link-${currentTheme}`}
+            onMouseEnter={() => {
+              playHoverAudio();
+            }}
+            onMouseLeave={() => {
+              stopHoverAudio();
+            }}
           >
-            <span className="sidebar_nav__link-text">{t("Contact me")}</span>
-            <img src={man} alt="man" className="sidebar_nav__link-image" />
+            <span className="sidebar_nav__link-text">{t("Contact me")}</span>
+            <img src={feedback} alt="man" className="sidebar_nav__link-image" />
           </button>
         </NavLink>
-
-        <button onClick={showContacts} className="sidebar_nav__link"
-        >
-          <span className="sidebar_nav__link-text">{t("Contacts")}</span>
-          <img src={info} alt="info" className="sidebar_nav__link-image" />
-        </button>
 
         <a href="" className="sidebar_nav__link" onClick={(e) => e.preventDefault()}
         >
           {/* <a href="/src/assets/CV_Rozumniy_Oleksii_Frontend.pdf" className="sidebar_nav__link" download="CV_Rozumniy_Oleksii_Frontend.pdf" > */}
 
-          <p className="sidebar_nav__link-text">{t("Download CV")}</p>
+          <p className="sidebar_nav__link-text">{t("Download CV")}</p>
           <img src={download_cv} alt="download_cv" className="sidebar_nav__link-image" />
         </a>
 
@@ -106,8 +96,8 @@ const Sidebar = () => {
         {/* <ToggleLang /> */}
         {/* <BtnDarkMode /> */}
       </div >
-      {isContactsOpen && <Contacts />
-      }
+      {/* {isContactsOpen && <Contacts />
+      } */}
     </>
   );
 };

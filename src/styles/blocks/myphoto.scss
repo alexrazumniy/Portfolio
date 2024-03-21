@@ -1,14 +1,13 @@
 .photo_container {
-  // position: absolute;
-  // top: 25px;
-  // left: 25px;
+  margin: 50px;
   width: 0;
   height: 100%;
   overflow: hidden;
-  // border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 13px 10px 23px -5px rgba(0, 0, 0, 0.75);
   transition: width 1.5s ease;
 }
 
 .animate_photo {
-  width: 300px; /* Целевая ширина изображения */  
+  width: 350px; /* Целевая ширина изображения */
 }
