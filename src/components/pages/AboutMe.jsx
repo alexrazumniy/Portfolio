@@ -16,7 +16,7 @@ const AboutMe = () => {
   return (
     <main className="section">
       <h1 className="title-1">{t("About me")}</h1>
-      <div className="container flex">
+      {/* <div className="container flex"> */}
         <div className="about_me flex">
           <div className="profile">
             <ul className="personal_info">
@@ -63,7 +63,7 @@ const AboutMe = () => {
           {/* <h5 className="about_me_text">{t("I am a team player")}</h5> */}
           {/* <h5 className="about_me_text">{t("Glad to be")}</h5> */}
         </div>
-      </div>
+      {/* </div> */}
       <Skills />
     </main>
   );

@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { ThemeContext } from "../../components/context/ThemeProvider.jsx";
 import MyPhotoWithAnimation from "../MyPhoto.jsx";
 import Contacts from "../ContactInfo.jsx";
-import info from "../../assets/icons/info_sign.svg";
+import info from "../../assets/icons/envelopes/envelope_mail_letter.svg";
 
 const Home = () => {
   const { currentTheme, t } = useContext(ThemeContext);
@@ -27,8 +27,8 @@ const Home = () => {
           <p className="intro_text">{t("I am a beginner frontend developer")}</p>
           <button onClick={showContacts} className="contacts_menu_button"
           >
-            <span className="contacts_menu_button-text">{t("About me")}</span>
-            <img src={info} alt="info" className="contacts_menu_button-image" />
+            <span className="contacts_menu_button-text">{t("Contact me")}</span>
+            {/* <img src={info} alt="info" className="contacts_menu_button-image" /> */}
           </button>
         </div>
       </div>

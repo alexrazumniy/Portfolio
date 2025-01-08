@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <main className="section">
       <p className="title-1">{t("Projects")}</p>
-      <ul className="projects">
+      <div className="projects">
         {projectslist.map(({ id, img, title }) => (
           // return <ProjectCard key={id} title={t(project.title)} img={project.img} id={id} />;
           <NavLink key={id} to={`/project/${id}`}>
@@ -20,7 +20,7 @@ const Portfolio = () => {
             </li>
           </NavLink>
         ))}
-      </ul>
+      </div>
     </main>
   );
 };
